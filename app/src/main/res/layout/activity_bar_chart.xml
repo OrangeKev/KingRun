@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/white_color"
+        android:backgroundTint="@color/white_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp">
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/text_color_3"
+                app:tabIndicatorHeight="2dp"
+                app:tabMinWidth="80dp"
+                app:tabSelectedTextColor="@color/text_color_black_common"
+                app:tabTextAppearance="@style/tab_text_style_circle"
+                app:tabTextColor="@color/text_color_gray_common">
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_week" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_month" />
+            </android.support.design.widget.TabLayout>
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/common_icon_back_black" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/transparency_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>

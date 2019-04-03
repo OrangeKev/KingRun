@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/common_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color">
+
+        <com.king.run.view.CircleImageView
+            android:id="@+id/iv_user_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_launcher_app" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/iv_user_avatar"
+            android:text="瑶儿"
+            android:textColor="@color/text_color_black_common"
+            android:textSize="@dimen/text_size_16" />
+
+        <RelativeLayout
+            android:id="@+id/ly_sex_age"
+            android:layout_width="29dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/iv_user_avatar"
+            android:background="@drawable/circle_pink_bg">
+
+            <ImageView
+                android:id="@+id/iv_sex"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="2dp" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@+id/iv_sex"
+                android:text="25"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_9" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_attention"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_circle_bg"
+            android:text="@string/attention"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color_black_common"
+        android:textSize="@dimen/text_size_14" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+
+        <RelativeLayout
+            android:id="@+id/ly_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_circle_pic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/common_btn_videoplay"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <com.king.run.view.GridViewForScrollView
+            android:id="@+id/gv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.84km"
+            android:textColor="@color/text_color_gray_common"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/tv_km"
+            android:text="10分钟前"
+            android:textColor="@color/text_color_gray_common"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/tv_time"
+            android:text="@string/delete"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_circle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="16dp">
+
+        <ImageView
+            android:id="@+id/iv_share_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_launcher_app"/>
+
+        <TextView
+            android:id="@+id/tv_km_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="28dp"
+            android:layout_toEndOf="@+id/iv_share_pic"
+            android:text="跑了11.36km，配速：4'56"
+            android:textColor="@color/text_color_32"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_time_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_km_speed"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/iv_share_pic"
+            android:text="用时：56分钟8秒"
+            android:textColor="@color/text_color_32"
+            android:textSize="@dimen/text_size_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/common_icon_arrow_grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/ly_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_praise"
+                android:layout_width="18.6dp"
+                android:layout_height="16.1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="4.6dp"
+                android:layout_marginStart="18.6dp"
+                android:layout_marginTop="22dp"
+                android:src="@mipmap/social_icon_unlike" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_praise_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ly_praise"
+            android:text="2"
+            android:textColor="@color/text_color_32"
+            android:textSize="@dimen/text_size_12" />
+
+        <RelativeLayout
+            android:id="@+id/ly_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_praise_num">
+
+            <ImageView
+                android:id="@+id/iv_comment"
+                android:layout_width="17dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="4.6dp"
+                android:layout_marginStart="27.5dp"
+                android:layout_marginTop="22dp"
+                android:background="@mipmap/social_icon_comment" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ly_comment_num"
+            android:text="3"
+            android:textColor="@color/text_color_32"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lv_comment_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/common_bg" />
+
+    <com.king.run.view.ListViewForScrollView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:divider="@color/common_bg" />
+
+    <View
+        android:id="@+id/lv_comment_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/common_bg" />
+</LinearLayout>

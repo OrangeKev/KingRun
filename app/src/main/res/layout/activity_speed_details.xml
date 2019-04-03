@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_262626"
+    tools:context="com.king.run.activity.statistics.SpeedDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tv_speed_bg"
+        android:paddingBottom="6dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="6dp"
+        android:text="2017-5-8 18:47"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_12" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginTop="17.5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/text_color_32">
+
+        <TextView
+            android:id="@+id/tv_total_time_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/total_time"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_12" />
+
+        <RelativeLayout
+            android:id="@+id/ly_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="44dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_km_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全场距离：公里"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/tv_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_km_name"
+                android:layout_marginTop="6dp"
+                android:text="0.13"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_27" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_total_time_name"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:text="00:00:55"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_27" />
+
+        <ProgressBar
+            android:id="@+id/pb_run_goal"
+            style="@style/Widget_ProgressBar_Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/ly_right"
+            android:layout_marginTop="20dp"
+            android:max="100"
+            android:progress="100"
+            android:visibility="invisible"
+            android:progressDrawable="@drawable/progress_bg" />
+
+        <TextView
+            android:id="@+id/tv_min_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pb_run_goal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="最慢:-"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_average_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pb_run_goal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="平均：06′41″"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_max_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/pb_run_goal"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text="最快：-"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+</RelativeLayout>

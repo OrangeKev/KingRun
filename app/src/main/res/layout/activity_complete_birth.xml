@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/tv_name_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="年龄" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name_age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="27" />
+
+    <ImageView
+        android:id="@+id/iv_splite"
+        style="@style/activity_text_splite_full"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv_name_year"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_splite"
+        android:gravity="center"
+        android:text="出生年份" />
+
+    <ImageView
+        style="@style/activity_text_splite_full"
+        android:layout_below="@+id/tv_name_year"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/yellow_shallow"
+        android:text="下一步" />
+</RelativeLayout>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.king.run">
+
+    <!-- 计歩 -->
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="xlZI4L1gGcRsRRnt2lNj1I3nbOWTvvKf" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".activity.other.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.other.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.other.ForgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.other.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.other.CompleteWeightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.other.CompleteHeightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.other.CompleteSexActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.other.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.EditInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.ModifyUserNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.CollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.LocationCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.SafetyConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.ModifyLoginPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.FansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.InputVerifyCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.NotifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.AttentionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.posture.ConnectDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.walk.ShareRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.CameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.walk.SelfCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.walk.SelectSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.HealthLifeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.walk.VoiceSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.run.WarmUpVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.run.PrepareSportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.run.IndoorRunActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.ride.RideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.exercise.ExerciseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.TrainRemindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.RemindSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.exercise.ExerciseVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.run.RunFinishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.exercise.RecommendedStrategyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.other.CompleteAvatarNickNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.exercise.StrategyDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.statistics.LineChartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.statistics.BarChartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.run.OutDoorRunActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="steps.teller.step.service.StepService"
+            android:priority="1000">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="steps.teller.pedometer.StepsDetectService"
+            android:priority="1000"
+            android:process="cn.bluemobi.dylan.step..pedometer.StepsDetectService">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.king.run.takephoto.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.AllActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.HotCircleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.PublishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.AddCircleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.arvin.pictureselector.uis.PictureSelectorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".base.ImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.CircleDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.InfoDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.circle.TakeVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.circle.UserInfoDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.MyDynamicListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.statistics.SpeedDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sport.run.RunFinishDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SurfaceViewTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1106402620" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.posture.MyShoesActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:process=":remote" />
+
+        <activity
+            android:name=".activity.BaiduMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.music.PlayMusicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.music.MusicListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.posture.CourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.posture.ChangeNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.posture.RunPostureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.posture.FootLandModeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.posture.FootRotationTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.music.MusicModeSettingActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".receiver.AudioService">
+            <intent-filter>
+                <action android:name="ITOP.MOBILE.SIMPLE.SERVICE.SENSORSERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".receiver.MediaService" />
+        <service android:name=".receiver.BlueToothConnectService" />
+
+        <activity android:name=".activity.circle.AllPraiseActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_choose_shoe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:text="@string/choose_shoe"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_choose_shoe_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/record_data"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_12" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/tv_choose_shoe_name"
+        android:src="@mipmap/common_icon_arrow_black" />
+
+    <RelativeLayout
+        android:id="@+id/ly_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_choose_shoe_name"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="73dp">
+
+        <RelativeLayout
+            android:id="@+id/ly_in_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_in"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:src="@mipmap/train_run_pic_indoor_circle_2" />
+
+            <ImageView
+                android:id="@+id/iv_in_in"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/train_run_pic_indoor_circle_1" />
+
+            <ImageView
+                android:id="@+id/iv_bg_in"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/iv_bg_red" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/train_run_icon_indoor" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly_in_in"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="@string/in_run"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_16" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ly_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_choose_shoe_name"
+        android:layout_marginEnd="57dp"
+        android:layout_marginTop="73dp">
+
+        <RelativeLayout
+            android:id="@+id/ly_out_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_out"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:src="@mipmap/train_run_pic_outdoor_circle_2" />
+
+            <ImageView
+                android:id="@+id/iv_out_out"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/train_run_pic_outdoor_circle_1" />
+
+            <ImageView
+                android:id="@+id/iv_bg_out"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/iv_bg_purple" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/train_run_icon_outdoor" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ly_out_out"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="@string/out_run"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/train_run_icon_close"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

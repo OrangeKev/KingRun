@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape>
+            <gradient
+                android:angle="90"
+                android:endColor="@color/yellow_btn_deep"
+                android:startColor="@color/yellow_btn_shallow" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <gradient
+                android:angle="90"
+                android:endColor="@color/view_color"
+                android:startColor="@color/view_color" />
+        </shape>
+    </item>
+</selector>

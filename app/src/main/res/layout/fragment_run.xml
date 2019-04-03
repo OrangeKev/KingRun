@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparency_color">
+
+
+    <RelativeLayout
+        android:id="@+id/ly_circle"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <com.king.run.view.DialCircleView2
+            android:id="@+id/step_arcview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:line_width_equality="true"
+            app:text_hide_circle="true"
+            app:text_kcal="配速"
+            app:text_km="大卡"
+            app:text_time="跑步公里(公里)" />
+
+        <TextView
+            android:id="@+id/tv_goal_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="155dp"
+            android:padding="5dp"
+            android:text="目标设置>>"
+            android:textColor="@color/text_color_black_common"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_start_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/common_btn_click"
+        android:text="@string/start_run"
+        android:visibility="gone" />
+</RelativeLayout>

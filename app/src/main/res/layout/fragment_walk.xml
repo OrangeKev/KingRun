@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparency_color">
+
+
+    <RelativeLayout
+        android:id="@+id/ly_circle"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <com.king.run.view.DialCircleView2
+            android:id="@+id/step_arcview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:text_time="今日步数" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_share_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/common_btn_click"
+        android:text="@string/share_record"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/KingRun.iml" filepath="$PROJECT_DIR$/KingRun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pictureselectorlibrary/pictureselectorlibrary.iml" filepath="$PROJECT_DIR$/pictureselectorlibrary/pictureselectorlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerviewadapter/recyclerviewadapter.iml" filepath="$PROJECT_DIR$/recyclerviewadapter/recyclerviewadapter.iml" />
+    </modules>
+  </component>
+</project>

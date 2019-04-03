@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparency_color">
+
+
+    <RelativeLayout
+        android:id="@+id/ly_circle"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <com.king.run.view.DialCircleView2
+            android:id="@+id/step_arcview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:line_width_equality="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:text_hide_circle="true"
+            app:text_time="累计健身(分钟)" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_start_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        android:background="@drawable/common_btn_click"
+        android:text="@string/start_exercise" />
+</RelativeLayout>

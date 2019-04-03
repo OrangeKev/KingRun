@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    tools:context="com.king.run.activity.music.MusicModeSettingActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/ly_breakpoint_play"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_color">
+
+
+        <TextView
+            android:id="@+id/tv_set_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="断点播放"
+            android:textColor="@color/text_color_32"
+            android:textSize="@dimen/text_size_16" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            app:theme="@style/scstyle" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_mode_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_breakpoint_play"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="播放模式"
+        android:textColor="@color/sub_class_content_text_color"
+        android:textSize="@dimen/text_size_14" />
+
+    <RelativeLayout
+        android:id="@+id/ly_china_woman_voice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_mode_name"
+        android:layout_marginTop="11dp"
+        android:background="@color/white_color">
+
+        <TextView
+            android:id="@+id/tv_girl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="循环播放"
+            android:textColor="@color/text_color_black_common"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/tv_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:src="@mipmap/common_icon_check_selected" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/splite"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ly_china_woman_voice"
+        android:background="@color/hint_text_color" />
+
+    <RelativeLayout
+        android:id="@+id/ly_china_man_voice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/splite"
+        android:background="@color/white_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="随机播放"
+            android:textColor="@color/text_color_black_common"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:src="@mipmap/common_icon_check_selected" />
+    </RelativeLayout>
+</RelativeLayout>

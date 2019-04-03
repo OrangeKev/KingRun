@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/ly_china_woman_voice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="11dp"
+        android:background="@color/white_color">
+
+        <TextView
+            android:id="@+id/tv_girl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="@string/china_woman_voice"
+            android:textColor="@color/text_color_black_common"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/iv_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/splite"
+        style="@style/activity_text_splite_full_shallow"
+        android:layout_below="@+id/ly_china_woman_voice" />
+
+    <RelativeLayout
+        android:id="@+id/ly_china_man_voice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/splite"
+        android:background="@color/white_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="@string/china_man_voice"
+            android:textColor="@color/text_color_black_common"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/iv_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp" />
+    </RelativeLayout>
+</RelativeLayout>

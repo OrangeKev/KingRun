@@ -1,0 +1,154 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@color/white_color</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 分割线 launchApp -->
+    <style name="activity_text_splite_full">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/split_line_color</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+    <!-- 分割线 launchApp -->
+    <style name="activity_text_splite_full_shallow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/view_color</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+
+    <style name="activity_text_splite_full_deep">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/split_line_color_common</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <style name="ios_bottom_dialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@color/white_color</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="run_type_dialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@color/bg_transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="ios_bottom_dialog_anim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <!-- 进入时的动画 -->
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+        <!-- 退出时的动画 -->
+    </style>
+
+    <style name="Widget_ProgressBar_Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:mirrorForRtl">true</item>
+    </style>
+
+    <style name="MyDialog" parent="android:Theme.Dialog">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item> <!--边框-->
+        <item name="android:windowBackground">@color/bg_transparent</item> <!-- 背景透明 -->
+        <item name="android:windowNoTitle">true</item> <!--无标题-->
+        <item name="android:windowIsTranslucent">true</item> <!--半透明-->
+        <item name="android:windowIsFloating">true</item> <!--是否浮现在activity之上-->
+        <item name="android:background">@drawable/finish_dialog_bg</item>
+    </style>
+
+    <style name="scstyle" parent="Theme.AppCompat.Light">
+        <!--开启时的颜色-->
+        <item name="colorControlActivated">@color/color_fc0</item>
+        <!--关闭时的颜色-->
+        <!--<item name="colorSwitchThumbNormal">#383434</item>-->
+        <!--关闭时的轨迹颜色-->
+        <item name="android:colorForeground">@color/color_e5e5e5</item>
+    </style>
+
+    <!--初步设置activity进入和退出的动画-->
+    <style name="activity_fade_in_out" parent="android:Animation.Activity">
+        <item name="android:activityCloseExitAnimation">@anim/activity_alpha_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_alpha_out</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_alpha_in</item>
+        <item name="android:activityOpenEnterAnimation">@anim/activity_alpha_in</item>
+    </style>
+
+    <style name="BatchManageActivity">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/activity_fade_in_out</item>
+    </style>
+
+    <style name="tab_text_style">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="tab_text_style_circle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <declare-styleable name="MyChartView">
+        <attr name="leftColor" format="color" />
+        <attr name="leftColorBottom" format="color" />
+        <attr name="selectLeftColor" format="color" />
+        <attr name="rightColor" format="color" />
+        <attr name="rightColorBottom" format="color" />
+        <attr name="selectRightColor" format="color" />
+        <attr name="isMonth" format="boolean" />
+        <attr name="xyColor" format="color" />
+    </declare-styleable>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

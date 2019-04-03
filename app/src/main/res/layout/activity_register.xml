@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relat_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="55.5dp">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7.5dp"
+            android:text="@string/phone"
+            android:textColor="@color/text_color_32"
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/tv_phone"
+            android:background="#00ffffff"
+            android:hint="@string/input_phone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/text_color_32"
+            android:textColorHint="@color/text_color_gray_common"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            style="@style/activity_text_splite_full_deep"
+            android:layout_below="@+id/et_phone"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relat_phone"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32.5dp">
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="7.5dp"
+            android:text="@string/code"
+            android:textColor="@color/text_color_32"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/btn_code"
+            android:layout_width="70dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_get_code"
+            android:text="@string/get_code"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_black_common"
+            android:textSize="@dimen/text_size_12" />
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/tv_code"
+            android:layout_toStartOf="@+id/btn_code"
+            android:background="#00ffffff"
+            android:hint="@string/input_code"
+            android:inputType="phone"
+            android:maxLength="6"
+            android:textColor="@color/text_color_32"
+            android:textColorHint="@color/text_color_gray_common"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            style="@style/activity_text_splite_full_deep"
+            android:layout_below="@+id/et_code"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relat_code"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32.5dp">
+
+        <TextView
+            android:id="@+id/tv_pwd"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="7.5dp"
+            android:text="@string/pwd"
+            android:textColor="@color/text_color_32"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/iv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/tv_pwd"
+            android:layout_toStartOf="@+id/iv_show"
+            android:background="#00ffffff"
+            android:hint="@string/input_new_pwd_length"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color_32"
+            android:textColorHint="@color/text_color_gray_common"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            style="@style/activity_text_splite_full_deep"
+            android:layout_below="@+id/et_pwd"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relat_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/common_btn_click"
+        android:text="@string/register" />
+</RelativeLayout>

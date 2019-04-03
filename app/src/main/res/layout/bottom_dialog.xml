@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottom_dialog_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/open_camera"
+            android:textColor="@color/text_color_black_common"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView style="@style/activity_text_splite_full_shallow" />
+
+        <TextView
+            android:id="@+id/tv_picture"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/open_picture"
+            android:textColor="@color/text_color_black_common"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView style="@style/activity_text_splite_full_shallow" />
+
+        <LinearLayout
+            android:id="@+id/options_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_splite"
+        style="@style/activity_text_splite_full_shallow"
+        android:layout_height="6dp"
+        android:layout_below="@+id/bottom_dialog_ll" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/iv_splite"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/cancel"
+        android:textColor="@color/text_color_black_common"
+        android:textSize="@dimen/text_size_16" />
+
+</RelativeLayout>

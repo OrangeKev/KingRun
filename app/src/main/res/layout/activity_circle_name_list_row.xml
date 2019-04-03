@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center_vertical"
+        android:text="#圈子名称#"
+        android:textColor="@color/text_color_black_common"
+        android:textSize="@dimen/text_size_16" />
+</RelativeLayout>
